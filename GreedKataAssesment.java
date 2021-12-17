@@ -13,11 +13,11 @@ public class GreedKataAssesment{
                         + "\nIf you would like to Roll your 5 dice type 'roll': ");
       String rolldiceinput = input.nextLine();
    
-      if(!rolldiceinput.equals("roll")){
+      if(!rolldiceinput.equals("roll")){ // for user interaction, if the input is not "roll" then we exit the program
          return;
       }
       
-      for(int i=0; i<= arr.length-1; i++) {
+      for(int i=0; i<= arr.length-1; i++) { // Fill array with random numbers ranging fro 1 to 6
          arr[i] = rand.nextInt(6) + 1;
          System.out.println("Dice" + ((i)+ 1) + " roll = " + arr[i]+" ");
       }
