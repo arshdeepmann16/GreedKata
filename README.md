@@ -22,13 +22,13 @@ include:
 • Output that has the value rolled on each die and the total score for the user to see
 
 # Clarifying Questions that I came up with
-Is there any invalid input when the program should not run?
-Is this a six sided dice?
-Are the input values suppose to be random?
-Does the array need to be sorted?
-How does the data need to be stored?
-What are some constraints?
-What are some edge cases to take into account to test?
+- Is there any invalid input when the program should not run?
+- Is this a six sided dice?
+- Are the input values suppose to be random?
+- Does the array need to be sorted?
+- How does the data need to be stored?
+- What are some constraints?
+- What are some edge cases to take into account to test?
 
 # Assumptions I made
 - That the dice is 6 sided
