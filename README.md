@@ -21,19 +21,23 @@ include:
 • A prompt for the user to roll their five dice
 • Output that has the value rolled on each die and the total score for the user to see
 
-# Example Scores
-• [1,1,1,1,1] = 1200 points
-• [1,1,1,5,1] = 1150 points
-• [2,3,4,6,2] = 0 points
-• [3,4,5,3,3] = 350 points
-
 # Clarifying Questions that I came up with
 Is there any invalid input when the program should not run?
 Is this a six sided dice?
 Are the input values suppose to be random?
+Does the array need to be sorted?
+How does the data need to be stored?
+What are some constraints?
+What are some edge cases to take into account to test?
 
 # Assumptions I made
 - That the dice is 6 sided
+- 1 roll for each dice
+- We have a fixed number of dice, meaning that we only need to loop through in constant time to count scoring
+- For counting scoring of triples, 2 to 6, the score will be the value * 100
+- For counting scoring of a triple one, the score will be the value * 1000
+- Only need an array of a specfifc size because of the number specfifced of how many dice there would be and how many rolls
+- Need an array to solve this problem because size is given
 
 # The different paths or solutions I contemplated
 - The first thing that came to my mind was creating 6 for loops, 6 variables, have a counter and if the element of the dice number shows up in the array then it would add one to the count for that dice numbers variable. If there are more than two of the number then it would add to the score according to the triple scorng guidlines. Then count for the rest of how many single ones or single fives there are and add that to the score. This was orginally my approach to this problem, but then I thought of creating a better solution which is my current approach which is much better as it does not use 6 for loops to do the same thing. 
